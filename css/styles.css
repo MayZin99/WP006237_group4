@@ -1,0 +1,18 @@
+
+
+
+article.menu>h1{
+    text-align: center;
+}
+
+
+article.menu div.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;   
+    justify-content: center;
+}
+
+article.menu div.menu-items section{
+    width: 400px;
+}
