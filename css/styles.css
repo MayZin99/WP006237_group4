@@ -5,7 +5,9 @@ article.menu>h1{
     text-align: center;
 }
 
-
+html {
+    overflow-y: scroll;
+}
 body{
     background-color: #F8DBBA;
     margin: 0;
