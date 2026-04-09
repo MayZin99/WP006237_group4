@@ -78,7 +78,6 @@ article.menu div.menu-items section{
   
 }
 
-
 .hero-inner {
   text-align: center;
   color: white;
@@ -197,7 +196,7 @@ article.menu div.menu-items section{
 footer {
   background: var(--dark);
   color: var(--cream);
-  padding: 64px 40px 28px;
+  padding: 30px 40px 28px;
   border-top: 2px solid var(--gold);
 }
 
@@ -206,7 +205,7 @@ footer {
   grid-template-columns: 1.6fr 1fr 1fr;
   gap: 50px;
   max-width: 1100px;
-  margin: 0 auto 50px;
+  margin: 0 auto 15px;
   
 }
 
