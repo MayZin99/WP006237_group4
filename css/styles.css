@@ -192,6 +192,14 @@ article.menu div.menu-items section{
   font-weight: 600;
 }
 
+/* ─── story section ──────────────────────────────────────────────── */
+section {
+  padding: 200px 100px;
+}
+
+.story {
+  background: var(--cream);
+}
 /* ─── FOOTER ──────────────────────────────────────────────── */
 footer {
   background: var(--dark);
