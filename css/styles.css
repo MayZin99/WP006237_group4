@@ -50,6 +50,10 @@ nav a:hover{
 }
 
 
+article.menu{
+  padding: 10px;
+}
+
 article.menu div.menu-items {
     display: flex;
     flex-wrap: wrap;
@@ -95,6 +99,27 @@ article.menu div.menu-items section img{
   content: "🌱";
   margin-left: 5px;
 }
+
+.gallery{
+  text-align: center;
+  padding: 40px;
+}
+
+.gallery-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+}
+.gallery-grid img{
+  width: 100%;
+  display: block;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
 
 
 /* ─── hero ─────────────────────────────────────────── */
