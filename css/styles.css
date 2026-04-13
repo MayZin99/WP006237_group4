@@ -252,9 +252,6 @@ article.menu div.menu-items section img{
 }
 
 /* ─── story section ──────────────────────────────────────────────── */
-section {
-  padding: 200px 100px;
-}
 
 .story {
   background: var(--cream);
