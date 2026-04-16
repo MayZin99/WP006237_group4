@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--to control different screen sizes-->
     <title>K'antica Pizzaria</title>
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    <link rel="stylesheet" type="text/css" href="./css/indexstyles.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    
 </head>
 
 <body>
@@ -15,8 +17,9 @@
         <li><a href="./page2.html">Menu</a></li>
         <li><a href="./page3.html">Reservation</a></li>
         <li><a href="./page4.html">Gallery</a></li>
-        <li><a href="./page5.html">Events & Promotion</a></li>
-        <li><a href="./page6.html">Contact & Review Page </a></li>
+        <li><a href="./page5.html">Events</a></li>
+        <li><a href="./page6.html">Review</a></li>
+        <li><a href="./page6.html">Contact</a></li>
     </ul>
 </nav>
 
@@ -24,9 +27,7 @@
   <div class="hero">
     <div class="hero-inner">
       <div class="ornament">
-        <span></span>
-        <img src="assets/logo.png" alt="Restaurant Logo" class="logo">
-        <span></span>
+        <img src="assets/logo.avif" alt="Restaurant Logo" class="logo"> 
       </div>
       <p class="hero-eyebrow">Naples · 1996 · Seoul</p>
       <h1>K'<em>antica</em><br>Pizzaria</h1>
@@ -40,16 +41,27 @@
 
 </body>
 
-  <!-- ─── INTRO STRIP ──────────────────────────────────────── -->
+<!-- ─── story section -->
+  <section class="story">
+    <div class="story-pizza story-pizza--left">
+      <img src="./assets/au_pizza.webp" alt="Margherita pizza">
+    </div>
+    <div class="story-center">
+      <p class="story-eyebrow">Our Story</p>
+      <p class="story-text">K'antica's menu embodies a timeless devotion to Neapolitan craft — wood-fired pizzas made with imported San Marzano tomatoes, hand-stretched dough, and the finest Italian cheeses. Every dish is a love letter to Naples, served in the heart of Seoul.</p>
+      <a href="./page2.html" class="story-btn">Explore Our Menu</a>
+    </div>
+    <div class="story-pizza story-pizza--right">
+      <img src="./assets/pizza_ingredients.avif" alt="Capriccosa pizza">
+    </div>
+  </section>
+
+ <!-- ─── availiable time intro strip. -->
   <div class="intro-strip">
     <p>Open <strong>Every Tuesday – Sunday</strong> &nbsp;·&nbsp;  11:00–23:00 &nbsp;·&nbsp; <strong>Reservations Recommended</strong></p>
   </div>
 
-  <!-- ─── OUR STORY ────────────────────────────────────────────── -->
-   <section class = "story">
-
-   </section>
- <!-- ─── FOOTER ────────────────────────────────────────────── -->
+ <!-- ─── footer section -->  
   <footer>
     <div class="footer-inner">
       <div class="footer-brand">
@@ -76,16 +88,17 @@
           South Korea<br><br>
           +82 2 1234 5678<br>
           hello@kantica.kr
-        </address>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 K'antica Pizzaria. All rights reserved.</p>
-      <div class="footer-social">
+        </address><br>
+        <div class="footer-social">
         <a href="#" aria-label="Instagram">IG</a>
         <a href="#" aria-label="Facebook">FB</a>
         <a href="#" aria-label="Naver">NV</a>
       </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p><strong>© 2025 K'antica Pizzaria. All rights reserved.</strong></p>
+      <div class="back-to-top"><a href="#top" class="bk-button"><strong>Back to Top</strong></a></div>
     </div>
   </footer>
 
