@@ -1,11 +1,10 @@
 /* ─── hero ─────────────────────────────────────────── */
 
 .hero {
-  height: 100vh;
+  height: 90vh;
   background: 
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('../assets/place.jpg') center/cover no-repeat;
-
+    url('../assets/place.jpg') center/100% no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,6 +16,8 @@
   text-align: center;
   color: white;
   max-width: 800px;
+  margin-top: -170px;
+  margin-right: -50px;
 }
 .ornament {
   display: flex;
@@ -46,7 +47,7 @@
 .hero h1 {
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-weight: 200;
-  font-size: clamp(5rem, 10vw, 8.5rem);
+  font-size: clamp(3rem, 7vw, 6rem);
   line-height: 0.9;
   letter-spacing: -0.02em;
   color: var(--cream);
@@ -76,17 +77,9 @@
 
 .scroll-cue {
   position: absolute;
-  bottom: 10px;
+  bottom: 100px; 
   left: 50%;
   transform: translateX(-50%);
-  z-index: 3;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-
-  animation: fadeIn 1s 1.8s ease both;
 }
 
 .scroll-cue span {
@@ -98,6 +91,9 @@
 }
 
 .scroll-line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   width: 1px;
   height: 44px;
   background: linear-gradient(to bottom, var(--gold), transparent);
