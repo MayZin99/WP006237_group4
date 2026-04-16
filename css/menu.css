@@ -1,0 +1,54 @@
+
+article.menu>h1{
+    text-align: center;
+}
+
+article.menu{
+    padding: 10px;
+}
+
+article.menu div.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+article.menu div.menu-items section{
+    width: 400px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gold-lt);
+    overflow: hidden;
+    text-align: center;
+
+}
+article.menu div.menu-items section img{
+    display: block;
+    width: 100%;
+    object-position: center;
+    height: 220px;
+    object-fit: cover;
+}
+
+.item-info{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    padding: 10px;
+}
+.item-info span {
+    margin-top: auto;
+}
+.item-info h3 {
+    margin-bottom: 8px;
+}
+
+.item-info p {
+    margin-bottom: 12px;
+}
+.vegan::after {
+    content: "🌱";
+    margin-left: 5px;
+}
