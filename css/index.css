@@ -16,7 +16,7 @@
   text-align: center;
   color: white;
   max-width: 800px;
-  transform: translate(50px, -100px);
+  transform: translate(-10px, -100px);
 }
 .ornament {
   display: flex;
@@ -78,7 +78,7 @@
   position: absolute;
   bottom: 250px; 
   left: 50%;
-  transform: translateX(-20%);
+  transform: translateX(-40%);
 }
 
 .scroll-cue span {
@@ -133,7 +133,7 @@
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.25s ease;
-
+  transform: translateX(10px) translateX(10px);
 }
 
 /* HOVER EFFECT */
