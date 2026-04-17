@@ -4,11 +4,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--to control different screen sizes-->
-    <title>K'antica Pizzaria</title>
+    
+    <link rel="preload" as="image" href="assets/place.jpg">
+    
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link rel="stylesheet" type="text/css" href="./css/nav.css">
-    <link rel="icon" type="image/x-icon" href="./assets/logo.avif">
-    <link rel="stylesheet" type="text/css" href="./css/footer.css">
+
+    <link rel="preload" href="css/footer.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="css/timestrip.css" as="style" onload="this.rel='stylesheet'">
+
+    <noscript>
+      <link rel="stylesheet" href="css/footer.css">
+      <link rel="stylesheet" href="css/timestrip.css">
+    </noscript>
+    <title>K'antica Pizzaria</title>
 </head>
 
 <body>
@@ -26,6 +35,7 @@
 
 <!-- ─── HERO ─────────────────────────────────────────────── -->
   <div class="hero">
+    <img src="assets/place.jpg"  alt="Restaurant interior" class="hero-bg" fetchpriority="high" loading="eager" >
     <div class="hero-inner">
       <div class="ornament">
         <span></span>
