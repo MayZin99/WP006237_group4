@@ -25,12 +25,13 @@ nav{
     background-color: #5A1E2D;
     text-align: center;
     margin: 0;
-    padding: 10px;
+    padding: 13px;
     border: 0;
 }
 
 nav ul{
     list-style-type: none;
+    transform: translateX(50px);
     margin: 0;
     padding: 0;
     border: 0;
@@ -42,7 +43,10 @@ nav ul li{
 }
 nav a{
     color: inherit;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
     text-decoration: none;
+    
 }
 
 nav a:hover{
@@ -62,8 +66,8 @@ article.menu div.menu-items {
 }
 
 article.menu div.menu-items section{
-    width: 400px;
-    border-radius: 20px;
+  width: 400px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   background-color: #F5D080;

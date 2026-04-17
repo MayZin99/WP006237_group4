@@ -1,7 +1,7 @@
 /* ─── hero ─────────────────────────────────────────── */
 
 .hero {
-  height: 90vh;
+  height: 80vh;
   background: 
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url('../assets/place.jpg') center/100% no-repeat;
@@ -16,8 +16,7 @@
   text-align: center;
   color: white;
   max-width: 800px;
-  margin-top: -170px;
-  margin-right: -50px;
+  transform: translate(50px, -100px);
 }
 .ornament {
   display: flex;
@@ -77,9 +76,9 @@
 
 .scroll-cue {
   position: absolute;
-  bottom: 100px; 
+  bottom: 250px; 
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-20%);
 }
 
 .scroll-cue span {
@@ -123,86 +122,159 @@
   font-weight: 600;
 }
 
+.reserve-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border: 1px solid rgba(238,184,83,0.4);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+
+}
+
+/* HOVER EFFECT */
+.reserve-btn:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+  transform: translateY(-2px); 
+}
+
+
 /* ─── story section ──────────────────────────────────────────────── */
- 
-.story {
-  background: var(--cream);
+.story-section {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 40px;
+  padding: 80px 20px;
+}
+
+.slide-container {
   position: relative;
+  width: 700px;
+  height: 500px;
   overflow: hidden;
-  min-height: 520px;
-  border-top: 6px solid var(--wine);
-  border-bottom: 6px solid var(--wine);
+  border: 3px solid #c9a35c;
+  box-shadow: 0 0 8px rgba(0,0,0,0.4);
+  transform: translateX(-90px);
 }
- 
-.story-pizza {
-  flex: 0 0 380px;
+
+.slides {
   display: flex;
-  align-items: center;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
 }
- 
-.story-pizza img {
-  width: 480px;
-  height: 480px;
+
+.slides img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 50%;
-  display: block;
+  object-position: center;
+  flex-shrink: 0;
 }
- 
-.story-pizza--left {
-  justify-content: flex-start;
-  margin-left: -120px;
+
+/* TEXT */
+.story-text {
+  max-width: 400px;
 }
- 
-.story-pizza--right {
-  justify-content: flex-end;
-  margin-right: -120px;
-}
- 
-.story-center {
-  flex: 1;
-  text-align: center;
-  padding: 60px 48px;
-  max-width: 520px;
-  z-index: 2;
-}
- 
-.story-eyebrow {
+
+.story-label {
   font-family: 'Cinzel', serif;
-  font-size: 0.7rem;
+  font-size: 1rem;
   letter-spacing: 0.35em;
   text-transform: uppercase;
   color: var(--wine);
-  opacity: 0.7;
-  margin-bottom: 20px;
+  margin-bottom: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-130px);
+  gap: 12px;
 }
- 
-.story-text {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-style: italic;
-  font-size: clamp(1rem, 2vw, 1.25rem);
-  color: var(--dark);
-  line-height: 1.9;
-  margin-bottom: 36px;
-}
- 
-.story-btn {
-  display: inline-block;
-  padding: 14px 36px;
+
+/*before & after line*/ 
+.story-label::before,
+.story-label::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
   background: var(--wine);
-  color: var(--cream);
-  text-decoration: none;
-  font-family: 'Cinzel', serif;
-  font-size: 0.72rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  border: 2px solid var(--wine);
-  transition: background 0.25s, color 0.25s;
+  opacity: 0.4;
 }
- 
-.story-btn:hover {
-  background: transparent;
+
+.story-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 100;
+  font-size: clamp(1.2rem, 5vw, 3rem);
+  text-align: center;
   color: var(--wine);
+  line-height: 1.1;
+  margin-top: -220px;
+  transform: translateX(-50px);
+}
+
+.story-title-em {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 100;
+  font-size: clamp(1.2rem, 5vw, 3rem);
+  line-height: 1.1;
+  color: var(--gold);
+  margin-top: -30px;
+  transform: translateX(70px);
+}
+
+.story-paragraph {
+  font-family: 'Cormorant Garamond', serif;
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 56px;
+  font-size: 1.1rem;
+  line-height: 1.85;
+  color: #4A2030;
+  opacity: 0.85;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px 14px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* nice hover effect */
+.arrow:hover {
+  background: rgba(0,0,0,0.8);
+}
+/* ─── TESTIMONIALS ──────────────────────────────────────────────────────── */
+.testimonials {
+  padding: 90px 40px;
+  background: var(--wine);
+  text-align: center;
+  border-top:  1px solid var(--goal);
+  border-bottom:1px solid var(--goal);
+}
+
+.section-label {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  color: var(--cream);
 }
