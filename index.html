@@ -43,27 +43,48 @@
     </div>
   </div>
 
-</body>
-
 <!-- ─── story section -->
-  <section class="story">
-    <div class="story-pizza story-pizza--left">
-      <img src="./assets/au_pizza.webp" alt="Margherita pizza">
+<div class="story-section">
+  
+  <div class="slide-container">
+    <div class="slides" id="slides">
+      <img src="assets/pizza1.jpg">
+      <img src="assets/pizza2.jpg">
+      <img src="assets/pizza3.jpg">
+      <img src="assets/pizza4.jpg">
+
+      
     </div>
-    <div class="story-center">
-      <p class="story-eyebrow">Our Story</p>
-      <p class="story-text">K'antica's menu embodies a timeless devotion to Neapolitan craft — wood-fired pizzas made with imported San Marzano tomatoes, hand-stretched dough, and the finest Italian cheeses. Every dish is a love letter to Naples, served in the heart of Seoul.</p>
-      <a href="menu.html" class="story-btn">Explore Our Menu</a>
-    </div>
-    <div class="story-pizza story-pizza--right">
-      <img src="./assets/pizza_ingredients.avif" alt="Capriccosa pizza">
-    </div>
-  </section>
+    <button class="arrow prev" onclick="prevSlide()">❮</button>
+    <button class="arrow next" onclick="nextSlide()">❯</button>
+  </div>
+
+  <div class="story-text">
+    <h1 class = "story-label">Our Story</h1>
+    <h2 class = "story-title">A Tradition<br></h2>
+    <h2 class = "story-title-em"><strong>Born in Fire</strong></h2>
+    <p class = "story-paragraph">
+      Since 1996, K'antica Pizzaria has been bringing a taste of Naples to your table. Inspired by 
+      the sun-drenched piazzas of southern Italy, every pizza is hand-stretched, 
+      made with our carefully nurtured sourdough culture, authentic DOP ingredients and fresh, seasonal produce, and baked in a wood-fired forno at 485°C.
+      We keep it simple—no shortcuts, no compromises—just tradition, care, and a love for great pizza.
+    </p>
+  </div>
+
+</div>
 
  <!-- ─── availiable time intro strip. -->
   <div class="intro-strip">
     <p>Open <strong>Every Tuesday – Sunday</strong> &nbsp;·&nbsp;  11:00–23:00 &nbsp;·&nbsp; <strong>Reservations Recommended</strong></p>
+    <br>
+    <a href="reservation.html" class="reserve-btn">Reservation</a>
   </div>
+
+  <!-- ─── TESTIMONIALS ──────────────────────────────────────── -->
+  <section class="testimonials">
+    <p class="section-label">Guest Voices</p>
+    <h2 class="section-title">What Our Guests<br><em>Are Saying</em></h2>
+  </section>
 
  <!-- ─── footer section -->  
   <footer>
@@ -105,5 +126,6 @@
       <div class="back-to-top"><a href="#top" class="bk-button"><strong>Back to Top</strong></a></div>
     </div>
   </footer>
-
+  <script src="js/index.js" defer></script>
+</body>
 </html>
