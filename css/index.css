@@ -1,15 +1,38 @@
 /* ─── hero ─────────────────────────────────────────── */
 
 .hero {
+  position: relative;
   height: 80vh;
-  background: 
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('../assets/place.jpg') center/100% no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  overflow: hidden;
+}
+
+/* background image */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* dark overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+/* content on top */
+.hero-inner,
+.scroll-cue {
+  position: relative;
+  z-index: 2;
 }
 
 .hero-inner {
@@ -76,7 +99,7 @@
 
 .scroll-cue {
   position: absolute;
-  bottom: 250px; 
+  bottom: 150px; 
   left: 50%;
   transform: translateX(-40%);
 }
@@ -99,28 +122,7 @@
   animation: scrollPulse 2s infinite ease-in-out;
 }
 
-/* ─── INTRO STRIP ─────────────────────────────────────────── */
-.intro-strip {
-  background: var(--wine);
-  padding: 18px 40px;
-  text-align: center;
-  border-top: 3px solid rgba(238,184,83,0.3);
-  border-bottom: 1px solid rgba(238,184,83,0.3);
-}
-
-.intro-strip p {
-  font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
-  font-size: clamp(1rem, 2.5vw, 1.35rem);
-  color: var(--cream);
-  letter-spacing: 0.04em;
-}
-
-.intro-strip p strong {
-  color: var(--gold);
-  font-style: normal;
-  font-weight: 600;
-}
+/* ─── INTRO STRIP button ─────────────────────────────────────────── */
 
 .reserve-btn {
   display: inline-block;
