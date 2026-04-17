@@ -22,8 +22,9 @@ article.menu div.menu-items section{
     background-color: var(--gold-lt);
     overflow: hidden;
     text-align: center;
-
+    position: relative;
 }
+
 article.menu div.menu-items section img{
     display: block;
     width: 100%;
@@ -31,6 +32,16 @@ article.menu div.menu-items section img{
     height: 220px;
     object-fit: cover;
 }
+
+article.menu div.menu-items section.drinks img {
+    width: 100%;
+    margin: 0 auto;
+    height: 220px;
+    object-fit: cover;
+    
+    object-position: 50% 35%;
+}
+
 
 .item-info{
     display: flex;
@@ -48,7 +59,30 @@ article.menu div.menu-items section img{
 .item-info p {
     margin-bottom: 12px;
 }
-.vegan::after {
-    content: "🌱";
-    margin-left: 5px;
+
+section::before {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    z-index: 1;
+
+    padding: 6px 12px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+
+    color: white;
+}
+
+section.vegan::before {
+    content: "VEGAN";
+    background-color: green;
+}
+
+section.bestSeller::before {
+    content: "BEST SELLER";
+    background-color: darkred;
 }
