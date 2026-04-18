@@ -33,5 +33,29 @@ Source: https://www.pexels.com/
 
 
 
+
+
+The images used in the "gallery" page were sourced from \*\*Pexels\*\*
+
+Photographers:
+
+* dough kneeding image by Debora Silveira
+* image of kids by kampus
+* image of a pizza in oven by katie barget
+* saucing of the pizzas image by matreding
+* image of a cutting board by maxavans
+* image of a kitchen through a window by maxavans
+* image of a person cutting a pizza by zinep
+
+
+
+Source: https://www.pexels.com/
+
+
+
+
+
+
+
 All images are free to use under the Pexels license.
 
