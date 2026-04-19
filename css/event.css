@@ -1,0 +1,40 @@
+/* ─── EVENTS & PROMOTIONS PAGE ───────────────────────────── */
+
+
+.events-list img,
+.promos-list img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.event-items section,
+.event-items .event-item,
+.promo-items section{
+    border: 1px solid;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.events-list figure,
+.promos-list figure{
+    margin: 0;
+}
+
+.item-info{
+    padding: 18px;
+}
+
+.item-info h3{
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--wine);
+}
+
+.events-list h1,
+.promos-list h1{
+    text-align: center;
+    color: var(--wine);
+    margin-bottom: 30px;
+}
