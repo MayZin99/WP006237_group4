@@ -37,6 +37,7 @@
 }
 
 .input-group input,
+.input-group select,
 .input-group textarea {
   padding: 10px;
   border: 1px solid;
@@ -48,21 +49,25 @@
 }
 
 .input-group input:focus,
+.input-group select:focus,
 .input-group textarea:focus {
   outline: none;
   border-color: var(--gold);
 }
 
-.table-choice {
+.table-choice,
+.preference-choice {
   border: 1px solid;
   border-radius: 6px;
   padding: 15px;
   margin-bottom: 18px;
 }
 
-.table-choice label {
+.table-choice label,
+.preference-choice label {
   display: inline-block;
   margin-right: 20px;
+  margin-bottom: 8px;
 }
 
 .form-buttons {
