@@ -1,40 +1,106 @@
 /* ─── EVENTS & PROMOTIONS PAGE ───────────────────────────── */
 
+.events-list,
+.promos-list {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 40px 20px 20px;
+}
+
+.promos-list {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.event-items,
+.promo-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
 
 .events-list img,
-.promos-list img{
+.promos-list img {
     width: 100%;
-    height: 260px;
+    height: 250px;
     object-fit: cover;
     display: block;
 }
 
 .event-items section,
 .event-items .event-item,
-.promo-items section{
-    border: 1px solid;
+.promo-items section {
+    width: 500px;
+    border: 1px solid #d8cfcf;
     border-radius: 12px;
     overflow: hidden;
+    background-color: #fffaf6;
 }
 
 .events-list figure,
-.promos-list figure{
+.promos-list figure {
     margin: 0;
 }
 
-.item-info{
-    padding: 18px;
+.item-info {
+    padding: 20px;
 }
 
-.item-info h3{
+.item-info h3 {
     margin-top: 0;
     margin-bottom: 10px;
     color: var(--wine);
 }
 
+.item-info p {
+    margin: 0 0 12px;
+    line-height: 1.6;
+}
+
+.item-info p:last-of-type {
+    margin-bottom: 0;
+}
+
+.item-info span {
+    display: inline-block;
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    color: var(--wine);
+}
+
 .events-list h1,
-.promos-list h1{
+.promos-list h1 {
     text-align: center;
     color: var(--wine);
     margin-bottom: 30px;
+}
+
+@media (max-width: 700px) {
+    .events-list,
+    .promos-list {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .event-items,
+    .promo-items {
+        gap: 20px;
+    }
+
+    .event-items section,
+    .event-items .event-item,
+    .promo-items section {
+        width: 100%;
+    }
+
+    .events-list img,
+    .promos-list img {
+        height: 220px;
+    }
+
+    .item-info {
+        padding: 18px;
+    }
 }
