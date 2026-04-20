@@ -172,14 +172,12 @@
   align-items: center;
   justify-content: center;
   font-size: 13px;
-  font-weight: 600;
   color: var(--wine);
   flex-shrink: 0;
 }
 
 .reviewer-name {
   font-size: 0.88rem;
-  font-weight: 600;
   color: var(--dark);
   font-family: Courier, monospace;
 }
