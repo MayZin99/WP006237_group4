@@ -1,7 +1,7 @@
 /*---------CONTATCS--------------------*/
 
 .contact-wrapper {
-  background-color: #F8DBBA;
+  background-color: var(--cream);
   padding: 48px;
 }
 
@@ -19,13 +19,13 @@
 .contact-col h2 {
   font-size: 20px;
   font-weight: 400;
-  color: #3a1020;
+  color: var(--wine);
   margin-bottom: 20px;
 }
 
 .contact-col p {
   font-size: 13px;
-  color: #5a4040;
+  color: var(--charcoal);
   line-height: 1.8;
 }
 
@@ -38,12 +38,12 @@
 }
 
 .contact-col .hours span:nth-child(odd) {
-  color: #9a7060;
+  color: var(--charcoal);
   text-align: right;
 }
 
 .contact-col .hours span:nth-child(even) {
-  color: #5a4040;
+  color: var(--charcoal);
 }
 
 .contact-map {
@@ -61,11 +61,6 @@
 
 
 /* ─── REVIEWS PAGE ────────────────────────────────── */
-.reviews-page {
-  background: var(--cream);
-  padding: 60px 0 80px;
-}
-
 .scroll-header {
   text-align: center;
   padding: 0 24px 40px;
@@ -179,14 +174,14 @@
 .reviewer-name {
   font-size: 0.88rem;
   color: var(--dark);
-  font-family: Courier, monospace;
+  font-family: 'Cormorant Garamond', serif
 }
 
 .reviewer-meta {
   font-size: 0.72rem;
   color: rgba(26, 10, 15, 0.45);
   margin-top: 2px;
-  font-family: Courier, monospace;
+  font-family: 'Cormorant Garamond', serif
 }
 
 .stars-display {
@@ -235,13 +230,13 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(26, 10, 15, 0.3);
-  font-family: Courier, monospace;
+  font-family: 'Cormorant Garamond', serif
 }
 
 .visit-date {
   font-size: 0.68rem;
   color: rgba(26, 10, 15, 0.3);
-  font-family: Courier, monospace;
+  font-family: 'Cormorant Garamond', serif
 }
 
 @media (max-width: 600px) {
