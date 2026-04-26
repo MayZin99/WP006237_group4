@@ -53,7 +53,7 @@ Source: https://www.pexels.com/
 
 
 
-
+Resize pictures : https://squoosh.app/editor
 
 
 
