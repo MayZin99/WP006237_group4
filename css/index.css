@@ -122,30 +122,6 @@
   animation: scrollPulse 2s infinite ease-in-out;
 }
 
-/* ─── INTRO STRIP button ─────────────────────────────────────────── */
-
-.reserve-btn {
-  display: inline-block;
-  padding: 10px 18px;
-  border: 1px solid rgba(238,184,83,0.4);
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 0.85rem;
-  letter-spacing: 0.12em;
-  color: var(--gold);
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: all 0.25s ease;
-  transform: translateX(10px) translateX(10px);
-}
-
-/* HOVER EFFECT */
-.reserve-btn:hover {
-  border-color: var(--gold);
-  color: var(--gold);
-  transform: translateY(-2px); 
-}
-
-
 /* ─── story section ──────────────────────────────────────────────── */
 .story-section {
   display: flex;
@@ -179,7 +155,7 @@
   flex-shrink: 0;
 }
 
-/* TEXT */
+
 .story-text {
   max-width: 400px;
 }
@@ -330,7 +306,7 @@
  
 .menu-items {
   display: flex;
-  gap: 60px; /* 100px is too large, 60 looks cleaner */
+  gap: 60px;
   justify-content: space-around;
 }
 
@@ -522,11 +498,11 @@
 
 .scroll-content {
   display: inline-block;
-  animation: scroll 30s linear infinite; /* Adjust speed here */
+  animation: scroll 30s linear infinite; 
 }
 
 .scroll-content img {
-  height: 200px; /* Set your desired height */
+  height: 200px;
   margin: 0 10px;
   display: inline-block;
 }
@@ -538,5 +514,5 @@
 
 @keyframes scroll {
   from { transform: translateX(0); }
-  to { transform: translateX(-50%); } /* Moves exactly half the width (one full set) */
+  to { transform: translateX(-50%); } 
 }
