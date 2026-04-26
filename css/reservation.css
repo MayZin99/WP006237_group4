@@ -91,3 +91,43 @@
   background: var(--gold);
   color: var(--dark);
 }
+
+/* START: Reservation summary page styles */
+.reservation-summary-page {
+  background: var(--cream);
+  margin: 0;
+  padding: 40px 20px;
+  font-family: Courier, "Courier New", monospace;
+}
+
+.reservation-summary-page .reservation-form-card {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.reservation-summary-title {
+  text-align: center;
+  color: var(--wine);
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.reservation-summary-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reservation-summary-table th,
+.reservation-summary-table td {
+  border: 1px solid var(--dark);
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+  background: white;
+}
+
+.reservation-summary-table th {
+  background: var(--wine);
+  color: var(--cream);
+}
+/* END: Reservation summary page styles */
