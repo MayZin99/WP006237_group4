@@ -1,0 +1,133 @@
+/* ─── RESERVATION PAGE ───────────────────────────────────── */
+
+.reservation-form-card {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: var(--cream);
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.reservation-form-card h2 {
+  text-align: center;
+  color: var(--wine);
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.input-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 18px;
+}
+
+.input-group label,
+.input-group legend {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--dark);
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 6px;
+  font-family: Courier, "Courier New", monospace;
+  font-size: 1rem;
+  background: white;
+  box-sizing: border-box;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.table-choice,
+.preference-choice {
+  border: 1px solid;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 18px;
+}
+
+.table-choice label,
+.preference-choice label {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 8px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.form-buttons button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: Courier, "Courier New", monospace;
+  font-size: 1rem;
+  background: var(--wine);
+  color: var(--cream);
+}
+
+.form-buttons button:hover {
+  background: var(--gold);
+  color: var(--dark);
+}
+
+/* START: Reservation summary page styles */
+.reservation-summary-page {
+  background: var(--cream);
+  margin: 0;
+  padding: 40px 20px;
+  font-family: Courier, "Courier New", monospace;
+}
+
+.reservation-summary-page .reservation-form-card {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.reservation-summary-title {
+  text-align: center;
+  color: var(--wine);
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.reservation-summary-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reservation-summary-table th,
+.reservation-summary-table td {
+  border: 1px solid var(--dark);
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+  background: white;
+}
+
+.reservation-summary-table th {
+  background: var(--wine);
+  color: var(--cream);
+}
+/* END: Reservation summary page styles */

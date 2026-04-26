@@ -3,10 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <title>Revies And Contacts</title>
+
     <link rel="icon" type="image/x-icon" href="./assets/logo.avif">
     <link rel="stylesheet" type="text/css" href="./css/nav.css">
+
     <link rel="stylesheet" type="text/css" href="./css/footer.css">
+    <link rel="stylesheet" type="text/css" href="./css/review_contact.css">
+
 </head>
 
 <body>
@@ -17,27 +21,26 @@
         <li><a href="reservation.html">Reservation</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="event.html">Events</a></li>
-        <li><a href="./review_contact.html">Review</a></li>
-        <li><a href="./review_contact.html">Contact</a></li>
+        <li><a href="./review_contact.html#reviews">Review</a></li>
+        <li><a href="./review_contact.html#contact">Contact</a></li>
 
     </ul>
 </nav>
 
 
-<div class="scroll-header">
+<div class="scroll-header" id="reviews">
     <p class="section-label">What our guests say</p>
     <h2 class="section-heading">Voices from the <em>table</em></h2>
   </div>
  
-  <div class="reviews-track-wrapper">
-    <div class="reviews-track" id="track">
+  <div class="reviews-track-wrapper" >
+    <div class="reviews-track">
  
-      
-      <div class="review-card">
+      <div class="review-card" >
         <div class="card-top">
-          <div class="avatar">EK</div>
+          <div class="avatar"><strong>EK</strong> </div>
           <div>
-            <div class="reviewer-name">Emily K.</div>
+            <div class="reviewer-name"><strong>Emily K.</strong></div>
             <div class="reviewer-meta">Itaewon, Seoul</div>
           </div>
         </div>
@@ -51,9 +54,9 @@
  
       <div class="review-card">
         <div class="card-top">
-          <div class="avatar">RP</div>
+          <div class="avatar"><strong>RP</strong></div>
           <div>
-            <div class="reviewer-name">Raj P.</div>
+            <div class="reviewer-name"><strong>Raj P.</strong></div>
             <div class="reviewer-meta">Visiting from Mumbai</div>
           </div>
         </div>
@@ -67,9 +70,9 @@
  
       <div class="review-card">
         <div class="card-top">
-          <div class="avatar">YJ</div>
+          <div class="avatar"><strong>YJ</strong></div>
           <div>
-            <div class="reviewer-name">Yuna J.</div>
+            <div class="reviewer-name"><strong>Yuna J.</strong></div>
             <div class="reviewer-meta">Mapo-gu, Seoul</div>
           </div>
         </div>
@@ -83,9 +86,9 @@
  
       <div class="review-card">
         <div class="card-top">
-          <div class="avatar">TW</div>
+          <div class="avatar"><strong>TW</strong></div>
           <div>
-            <div class="reviewer-name">Thomas W.</div>
+            <div class="reviewer-name"><strong>Thomas W.</strong></div>
             <div class="reviewer-meta">Gangnam-gu, Seoul</div>
           </div>
         </div>
@@ -105,23 +108,22 @@
 
 
 
-    <div class="contact-wrapper">
-        <div class="contact-box">
-
-          
+<div class="contact-wrapper" id="contact">
+          <div class="contact-box">
+         
             <div class="contact-col">
-                <h2>Address</h2>
+                <h2> <strong>Address</strong> </h2>
                 <p>123-4 Nonhyeon-dong, Gangnam-gu, Seoul, South Korea</p>
             </div>
 
             <div class="contact-col">
-                <h2>Contacts</h2>
+                <h2><strong>Contacts</strong></h2>
                 <p>+82 2 1234 5678</p>
                 <p>hello@kantica.kr</p>
             </div>
 
             <div class="contact-col">
-                <h2>Working hours</h2>
+                <h2><strong>Working hours</strong></h2>
                 <div class="hours">
                     <span>I–III</span><span>12:00 – 22:00</span>
                     <span>IV</span><span>12:00 – 23:00</span>
@@ -142,7 +144,8 @@
         </div>
     </div>
  <!-- ─── FOOTER ────────────────────────────────────────────── -->
-  <footer>
+
+<footer>
     <div class="footer-inner">
       <div class="footer-brand">
         <div class="footer-logo">K'<em>antica</em> Pizzaria</div>
@@ -170,16 +173,45 @@
           hello@kantica.kr
         </address>
       </div>
+        <div class="footer-brand">
+            <div class="footer-logo">K'<em>antica</em> Pizzaria</div>
+            <p class="footer-tagline">Authentic Italian Resturant · Est. 1987</p>
+            <p>Bringing the warmth and authenticity of Neapolitan tradition to every table — one handcrafted pizza at a time.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Navigate</h4>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="event.html">Events &amp; Promotion</a></li>
+                <li><a href="review_contact.html">Contact &amp; Review</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Find Us</h4>
+            <address>
+                123-4 Nonhyeon-dong<br>
+                Gangnam-gu, Seoul<br>
+                South Korea<br><br>
+                +82 2 1234 5678<br>
+                hello@kantica.kr
+            </address><br>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="Facebook">FB</a>
+                <a href="#" aria-label="Naver">NV</a>
+            </div>
+        </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 K'antica Pizzaria. All rights reserved.</p>
-      <div class="footer-social">
-        <a href="#" aria-label="Instagram">IG</a>
-        <a href="#" aria-label="Facebook">FB</a>
-        <a href="#" aria-label="Naver">NV</a>
-      </div>
+        <p><strong>© 2025 K'antica Pizzaria. All rights reserved.</strong></p>
+        <div class="back-to-top"><a href="#top" class="bk-button"><strong>Back to Top</strong></a></div>
     </div>
-  </footer>
+</footer>
 </body>
+
+
 
 </html>
