@@ -6,6 +6,7 @@
   --dark:     #1A0A0F;
   --charcoal: #2C1020;
   --gold-lt:  #F5D080;
+  --rustic: #9B2F2F;
 }
 
 html {
@@ -21,7 +22,7 @@ nav{
     background-color: var(--wine);
     text-align: center;
     margin: 0;
-    padding: 15px;
+    padding: 17px;
     border: 0;
 }
 
@@ -40,7 +41,7 @@ nav ul li{
 nav a{
     color: inherit;
     font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-decoration: none;
 }
 
