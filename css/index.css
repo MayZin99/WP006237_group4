@@ -273,7 +273,7 @@
 }
  
 .eyebrow {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -302,7 +302,7 @@
   transition: color 0.2s;
 }
 
- .section-link:hover { color: var(--cream); }
+.section-link:hover { color: var(--cream); }
  
 .menu-items {
   display: flex;
@@ -334,7 +334,7 @@
   height: 350px;
 }
 
-.item-info p, span{
+.item-info p, .item-info span {
   font-family: 'Cormorant Garamond', serif;
   color:var(--gold-lt)
 }
@@ -354,7 +354,7 @@
   position: absolute;
   top: 10px;
   padding: 6px 12px;
-  font-size: 0.75rem;
+  font-size: 1rem;
   border-radius: 20px;
   color: white;
 }
@@ -373,7 +373,7 @@
   font-weight: bold;
 }
 .vegan{
-   right: 10px;
+  right: 10px;
   background: #14753e; 
   color: var(--cream);
   font-weight: bold;
@@ -405,12 +405,15 @@
   line-height: 1.5;
 }
 .quote-author {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--wine);
   text-decoration: none;
+}
+.quote-author:hover {
+    color: var(--rustic);
 }
 
 /* ─── reservation ──────────────────────────────────────────────────────── */
@@ -418,10 +421,11 @@
   background: var(--gold-lt);
   padding: 40px 40px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 72px;
-  align-items: center;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 50px;
+  align-items: start;
 }
+
 .join {
   font-size: 20px;
   font-weight: 500;
@@ -456,7 +460,7 @@
   color: var(--cream);
   padding: 14px 34px;
   border-radius: 2px;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -473,7 +477,7 @@
 
 .res-info-label {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
