@@ -24,6 +24,24 @@ nav{
     margin: 0;
     padding: 17px;
     border: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 400;
+    position: absolute;  
+    left: 120px;
+    letter-spacing: 0.06em;
+    color: var(--gold);
+    text-decoration: none;
+    margin-left: 30px;
+    }
+
+.nav-logo:hover {
+    color: var(--cream);
 }
 
 nav ul{
