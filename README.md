@@ -36,6 +36,7 @@ Git & GitHub
 AWS Cloud Services
 
 Project Structure 
+'''
 WP006237_GROUP4/
 │
 ├── .github/                  # GitHub configuration files
@@ -64,7 +65,8 @@ WP006237_GROUP4/
 ├── reservation_summary.html  # Reservation summary page
 ├── review_contact.html       # Review & contact page
 │
-└── README.md                 # Project documentation
+└── README.md                 # Project documentation 
+'''
 
 Group Members 
 MAY ZIN OO 
