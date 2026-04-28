@@ -10,6 +10,7 @@
 }
 
 .reservation-form-card h2 {
+  font-family: 'Playfair Display', serif;
   text-align: center;
   color: var(--wine);
   margin-top: 0;
@@ -31,6 +32,7 @@
 
 .input-group label,
 .input-group legend {
+  font-family: 'Cormorant Garamond', serif;
   margin-bottom: 8px;
   font-weight: bold;
   color: var(--dark);
@@ -42,7 +44,7 @@
   padding: 10px;
   border: 1px solid;
   border-radius: 6px;
-  font-family: Courier, "Courier New", monospace;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 1rem;
   background: white;
   box-sizing: border-box;
@@ -81,7 +83,7 @@
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  font-family: Courier, "Courier New", monospace;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 1rem;
   background: var(--wine);
   color: var(--cream);
@@ -97,7 +99,7 @@
   background: var(--cream);
   margin: 0;
   padding: 40px 20px;
-  font-family: Courier, "Courier New", monospace;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .reservation-summary-page .reservation-form-card {
@@ -106,6 +108,7 @@
 }
 
 .reservation-summary-title {
+  font-family: 'Playfair Display', serif;
   text-align: center;
   color: var(--wine);
   margin-top: 0;

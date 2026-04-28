@@ -1,6 +1,23 @@
 // Get the reservation form from the page.
 const bookingForm = document.getElementById("bookingForm");
-const reservationCard = document.querySelector(".reservation-form-card");
+const reservationSummaryBody = document.getElementById("reservationSummaryBody");
+const savedReservationDetails = sessionStorage.getItem("reservationDetails");
+
+if (reservationSummaryBody && savedReservationDetails) {
+    const reservationDetails = JSON.parse(savedReservationDetails);
+    let tableRows = "";
+
+    // Build one table row for each form field and value.
+    for (let i = 0; i < reservationDetails.length; i++) {
+        tableRows +=
+            "<tr>" +
+            "<td>" + reservationDetails[i][0] + "</td>" +
+            "<td>" + reservationDetails[i][1] + "</td>" +
+            "</tr>";
+    }
+
+    reservationSummaryBody.innerHTML = tableRows;
+}
 
 if (bookingForm) {
     // Run this code when the user submits the form.
@@ -49,39 +66,10 @@ if (bookingForm) {
             ["Special Requests", specialText]
         ];
 
-        let tableRows = "";
+        // Save the submitted details for the summary page.
+        sessionStorage.setItem("reservationDetails", JSON.stringify(reservationDetails));
 
-        // Build one table row for each form field and value.
-        for (let i = 0; i < reservationDetails.length; i++) {
-            tableRows +=
-                "<tr>" +
-                "<td>" + reservationDetails[i][0] + "</td>" +
-                "<td>" + reservationDetails[i][1] + "</td>" +
-                "</tr>";
-        }
-
-        // Show the summary table inside the existing reservation page.
-        reservationCard.innerHTML = `
-            <h2 class="reservation-summary-title">Reservation Summary</h2>
-            <table class="reservation-summary-table">
-                <thead>
-                    <tr>
-                        <th>Field</th>
-                        <th>Value</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    ${tableRows}
-                </tbody>
-            </table>
-            <div class="form-buttons">
-                <button type="button" id="backToFormButton">Back to Reservation Form</button>
-            </div>
-        `;
-
-        // Return to the original reservation form view.
-        document.getElementById("backToFormButton").addEventListener("click", function () {
-            window.location.reload();
-        });
+        // Open the simple summary page in a fresh tab.
+        window.open("reservation_summary.html", "_blank");
     });
 }
