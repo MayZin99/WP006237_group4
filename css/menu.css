@@ -48,6 +48,7 @@ article.menu div.menu-items section.drinks img {
     flex:1;
     flex-direction: column;
     padding: 10px;
+    font-size: 1rem;
 }
 .item-info span {
     margin-top: auto;
@@ -67,7 +68,7 @@ section::before {
     z-index: 1;
 
     padding: 6px 12px;
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-weight: bold;
     letter-spacing: 1px;
 
