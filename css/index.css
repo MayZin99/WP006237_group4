@@ -489,11 +489,18 @@ p {
   margin-bottom: 7px;
 }
 
-.res-info-value {
+.res-info-value, .res-info-value a  {
   font-family: 'Cormorant Garamond', serif;
   font-size: 19px;
   color: var(--wine);
   line-height: 1.5;
+}
+.res-info-value a {
+  text-decoration: none;
+}
+
+.res-info-value a:hover {
+  color: var(--rustic);
 }
 /* ─── event rotation ──────────────────────────────────────────────────────── */
 .scroll-container {
