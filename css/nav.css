@@ -15,7 +15,6 @@ html {
 body{
     background-color: var(--cream);
     margin: 0;
-    font-family: Courier, "Courier New", monospace;
 }
 
 nav{

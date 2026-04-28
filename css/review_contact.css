@@ -8,6 +8,7 @@
 .contact-box {
   background-color: #ffffff;
   border-radius: 8px;
+  border: 2px solid var(--wine);
   padding: 48px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -142,7 +143,7 @@
 .review-card {
   flex: 0 0 300px;
   background: #fff;
-  border: 1px solid rgba(90, 30, 45, 0.1);
+  border: 2px solid var(--wine);
   border-radius: 10px;
   padding: 22px 20px 18px;
   scroll-snap-align: start;
@@ -161,7 +162,7 @@
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: var(--gold-lt);
+  background: var(--gold);
   display: flex;
   align-items: center;
   justify-content: center;
