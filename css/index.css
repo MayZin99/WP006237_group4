@@ -543,7 +543,7 @@ p {
   font-style: italic;
   font-weight: 400; 
 }
-.highlight-link {
+.highlight-link, .highlight-G {
   color: var(--charcoal);        
   text-decoration: none;    
   font-style: normal;       
@@ -551,8 +551,8 @@ p {
 }
 
 
-.highlight-link:hover {
-  color: var(--dark);
+.highlight-link:hover , .highlight-G:hover {
+  color: var(--rustic);
 }
 
 @keyframes scroll {
