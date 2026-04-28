@@ -24,7 +24,7 @@
   margin-bottom: 20px;
 }
 
-.contact-col p {
+.contact-col p, a {
   font-size: 16px;
   color: var(--charcoal);
   line-height: 1.8;
