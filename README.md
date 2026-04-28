@@ -36,7 +36,7 @@ Git & GitHub
 AWS Cloud Services
 
 Project Structure 
-'''
+```
 WP006237_GROUP4/
 │
 ├── .github/                  # GitHub configuration files
@@ -66,13 +66,13 @@ WP006237_GROUP4/
 ├── review_contact.html       # Review & contact page
 │
 └── README.md                 # Project documentation 
-'''
+```
 
 Group Members 
-MAY ZIN OO 
-MATAS FIRANTAS
-UGNE KAMISKAITE
-JULIUS GINEIKA 
+<u> MAY ZIN OO </u>
+<u> MATAS FIRANTAS </u>
+<u> UGNE KAMISKAITE </u>
+<u> JULIUS GINEIKA </u>
 
 Image Credits
 
