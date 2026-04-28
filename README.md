@@ -1,61 +1,134 @@
-\#Midterm Group Project Website for Web Programming 006237 class
+#  Midterm Group Project — Web Programming 006237
 
+This project is a responsive restaurant website developed for the **Web Programming (006237)** midterm group assignment. It represents a modern Italian pizza restaurant with an interactive and visually appealing interface.
 
+---
 
-\# Image Credits
+##  Features
 
+- Home page with branding and introduction  
+- Menu page (pizza & drinks)  
+- Gallery page  
+- Reservation system  
+- Events page  
+- Reviews and Contact page  
+- Fully responsive design  
+- Deployed on cloud (AWS) with custom domain  
 
+---
 
-The pizza images used in the "menu" page were sourced from \*\*Pexels\*\*.
+##  Live Website
 
+- https://www.kanticapizzaria.ecopath.site/  
+- https://mayzin99.github.io/WP006237_group4/
 
+---
 
-Photographer: \*\*Anhelina Vasylyk\*\*
+##  Deployment Details
 
-Source: https://www.pexels.com/ , 
-        https://unsplash.com/
+The website is deployed using AWS cloud services:
 
+- Hosting: Amazon S3 (Static Website Hosting)  
+- Domain Management: Spaceship  
+- CDN: Amazon CloudFront  
 
+###  Deployment Steps
 
+- Upload website files to S3 bucket  
+- Enable static website hosting  
+- Configure bucket policy for public access  
+- Connect domain via SSL certification with domain manager (Spaceship)  
+- Configure CloudFront for faster delivery  
 
-The drinks images used in the "menu" page were sourced from \*\*Pexels\*\*
+---
 
+##  Technologies Used
+
+- HTML5  
+- CSS3  
+- Git & GitHub  
+- AWS Cloud Services  
+
+---
+
+##  Project Structure
+
+```plaintext
+WP006237_GROUP4/
+│
+├── .github/
+├── assets/
+│
+├── css/
+│   ├── event.css
+│   ├── footer.css
+│   ├── gallery.css
+│   ├── index.css
+│   ├── menu.css
+│   ├── nav.css
+│   ├── reservation.css
+│   ├── review_contact.css
+│   └── timestrip.css
+│
+├── js/
+│   ├── index.js
+│   └── reservation.js
+│
+├── event.html
+├── gallery.html
+├── index.html
+├── menu.html
+├── reservation.html
+├── reservation_summary.html
+├── review_contact.html
+│
+└── README.md
+```
+
+---
+
+##  Group Members
+
+- **MAY ZIN OO**  
+- **MATAS FIRANTAS**  
+- **UGNE KAMISKAITE**  
+- **JULIUS GINEIKA**  
+
+---
+
+##  Image Credits
+
+All images are free to use under their respective licenses.
+
+**Source:** Pexels  
+
+###  Menu Page — Pizza Images
+- Photographer: Anhelina Vasylyk  
+
+###  Menu Page — Drinks Images
 Photographers:
+- Christopher Welsch Leveroni (Lemonade)  
+- Instasky (Pepsi)  
+- Stephen Leonardi (Orange Juice)  
+- Alipli (Coca-Cola)  
 
-* lemonade image by christopher-welsch-leveroni
-* pepsi image by instasky
-* orange juice image by stephen-leonardi
-* coca-cola image by alipli
-
-
-
-Source: https://www.pexels.com/
-
-
-
-
-
-The images used in the "gallery" page were sourced from \*\*Pexels\*\*
-
+###  Gallery Page Images
 Photographers:
+- Debora Silveira  
+- Kampus  
+- Katie Barget  
+- Mat Reding  
+- Max Avans  
+- Zinep  
 
-* dough kneeding image by Debora Silveira
-* image of kids by kampus
-* image of a pizza in oven by katie barget
-* saucing of the pizzas image by matreding
-* image of a cutting board by maxavans
-* image of a kitchen through a window by maxavans
-* image of a person cutting a pizza by zinep
+---
 
+##  Image Processing
 
+Images were resized using Squoosh.
 
-Source: https://www.pexels.com/
+---
 
+##  License
 
-
-Resize pictures : https://squoosh.app/editor
-
-
-
-All images are free to use under the Pexels license.
-
+This project is for educational purposes only.
