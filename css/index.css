@@ -1,3 +1,11 @@
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+p {
+  font-family: 'Cormorant Garamond', serif;
+}
+
 /* ─── hero ─────────────────────────────────────────── */
 
 .hero {
@@ -67,7 +75,6 @@
 }
 
 .hero h1 {
-  font-family: 'Cormorant Garamond', Georgia, serif;
   font-weight: 200;
   font-size: clamp(3rem, 7vw, 6rem);
   line-height: 0.9;
@@ -85,8 +92,8 @@
 .hero-sub {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
-  font-size: clamp(1.2rem, 2.5vw, 1.8rem); /* slightly bigger */
-  color: rgba(240, 160, 69, 0.8);
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem); 
+  color: var(--gold-lt);
   margin: 26px auto 45px;
   max-width: 600px;
 }
@@ -186,7 +193,6 @@
 }
 
 .story-title {
-  font-family: 'Cormorant Garamond', serif;
   font-weight: 100;
   font-size: clamp(1.2rem, 5vw, 3rem);
   text-align: center;
@@ -197,11 +203,10 @@
 }
 
 .story-title-em {
-  font-family: 'Cormorant Garamond', serif;
   font-weight: 100;
   font-size: clamp(1.2rem, 5vw, 3rem);
   line-height: 1.1;
-  color: var(--gold);
+  color: var(--rustic);
   margin-top: -30px;
   transform: translateX(70px);
 }
@@ -213,7 +218,7 @@
   margin: 0 auto 56px;
   font-size: 1.1rem;
   line-height: 1.85;
-  color: #4A2030;
+  color: var(--wine);
   opacity: 0.85;
 }
 .story-time {
@@ -336,10 +341,11 @@
 
 .item-info p, .item-info span {
   font-family: 'Cormorant Garamond', serif;
-  color:var(--gold-lt)
+  color:var(--gold-lt);
+  font-size: 18px;
 }
 .item-info h3 {
-  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
   color:var(--cream)
 }
 
@@ -375,7 +381,7 @@
 .vegan{
   right: 10px;
   background: #14753e; 
-  color: var(--cream);
+  color: white;
   font-weight: bold;
 }
  
@@ -386,7 +392,6 @@
   padding: 40px 40px;
 }
 .quote-mark {
-  font-family: 'Playfair Display', serif;
   font-size: 70px;
   line-height: 0.3;
   color: var(--charcoal);
@@ -399,7 +404,7 @@
   font-size: 30px;
   font-style: italic;
   font-weight: 300;
-  color: var(--rustic);
+  color: var(--wine);
   max-width: 660px;
   margin: 0 auto 28px;
   line-height: 1.5;
@@ -435,8 +440,7 @@
   margin-bottom: 20px;
 
 }
-.res-title {
-  font-family: 'Playfair Display', serif;
+.res-title, .scroll-title {
   font-size: 42px;
   line-height: 1.12;
   color: var(--wine);
@@ -449,7 +453,7 @@
 .res-body {
   font-family: 'Cormorant Garamond', serif;
   font-size: 19px;
-  color: var(--rustic);
+  color: var(--charcoal);
   line-height: 1.72;
   margin-bottom: 36px;
  }
@@ -493,11 +497,12 @@
 }
 /* ─── event rotation ──────────────────────────────────────────────────────── */
 .scroll-container {
+  position: relative;
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
   background: var(--cream);
-  padding: 20px 0;
+  padding: 40px 40px;
 }
 
 .scroll-content {
@@ -511,9 +516,36 @@
   display: inline-block;
 }
 
-/* Pause on hover (just like modern sites) */
+/* Pause on hover */
 .scroll-container:hover .scroll-content {
   animation-play-state: paused;
+}
+
+.scroll-title {
+  position: static;    
+  margin-bottom: 20px;
+  
+}
+.scroll-container p {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--wine);
+  font-size: 29px;
+}
+.scroll-container strong {
+  font-style: italic;
+  font-weight: 400; 
+}
+.highlight-link {
+  color: var(--charcoal);        
+  text-decoration: none;    
+  font-style: normal;       
+  font-weight: 600;
+}
+
+
+.highlight-link:hover {
+  color: var(--dark);
 }
 
 @keyframes scroll {
