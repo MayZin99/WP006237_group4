@@ -1,3 +1,5 @@
+Midterm Project Graded (YSTEO)
+
 #  Midterm Group Project — Web Programming 006237
 
 This project is a responsive restaurant website developed for the **Web Programming (006237)** midterm group assignment. It represents a modern Italian pizza restaurant with an interactive and visually appealing interface.
